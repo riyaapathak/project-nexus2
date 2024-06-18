@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Example</title>
+    <style>
+        html {
+            border: 10px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Image Banner</title>
+<style>
+  .banner {
+    display: flex;
+    background-color: rgb(197, 141, 211);
+    color: #0a0a0a; /* text color */
+    padding: 10px;
+  }
+
+  .custom-img {
+    max-width: 200px; /* Adjust image size as needed */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  .text-content {
+    flex: 1; /* Take remaining space */
+    padding-left: 50px; /* Spacing between image and text */
+  }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <img src="https://img.freepik.com/premium-vector/outdoor-street-cafe-summer-park-area-cartoon-vector-illustration_135595-82242.jpg?size=626&ext=jpg&ga=GA1.1.956300636.1718546742&semt=ais_user" alt="Custom Image" class="custom-img">
+  <div class="text-content" style="font-family: 'Brush Script', cursive;">
+    <h1>Welcome to-`♡´-𝓜𝓐𝓖𝓘𝓒𝓐𝓛 𝓗𝓞𝓜𝓔 ❀ </h1>
+    <p>A magical website that brings organic food to you...</p>
+    <p>“𝘿𝙤𝙣’𝙩 𝙨𝙚𝙩𝙩𝙡𝙚 𝙛𝙤𝙧 𝙡𝙚𝙨𝙨 𝙬𝙝𝙚𝙣 𝙮𝙤𝙪 𝙘𝙖𝙣 𝙝𝙖𝙫𝙚 𝙩𝙝𝙚 𝙗𝙚𝙨𝙩｡ 𝘾𝙝𝙤𝙤𝙨𝙚 𝙪𝙨｡”</p>
+    <p>homemade products .. keeping people healthy</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blinking Text Banner</title>
+  <style>
+    .blink {
+      animation: blink 1s steps(1, end) infinite;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(22, 7, 87);
+      text-align: center;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p class="blink">“Our homemade product is a magical blend of quality and comfort.”</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Background Color</title>
+<style>
+  body  {
+  background-image: url("https://images.unsplash.com/photo-1614481327033-68e5df399653?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFzdGVsJTIwYmx1ZXxlbnwwfHwwfHx8MA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+</html>
+
+<div class="product-card">
+    <h2>1. MASALA DOSA</h2>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0z1wl8XVnXYnOliFrPjq-yJnDzaDT12n45w&usqp=CAU" alt="Masala Dosa" align="right" height="200" width="250">
+    <br><p>Rs.120.00</p>
+     <p>"Masala Dosa with fresh chutneyyyy!!!"</p>
+     <p>One quantity consists only 1 Dosa</p>
+     <button onclick="addToCart('Masala Dosa', 120.00)">Add to Cart</button>
+     <div class="quantity">
+        <button type="button" class="minus">-</button>
+        <input type="number" class="qty" min="1" step="1" value="1">
+        <button type="button" class="plus">+</button>
+    </div>
+</div>
+
+<br><br><br><br><br>
+
+<div class="product-card">
+    <h2>2. GREEN WAVE PIZZA</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xc3vfqh8AKmS9kcW8cg2cnRyan7T4R-UAg&usqp=CAU" alt="Green wave Mexican Pizza" align="right" height="200" width="250">
+    <br><p>Rs.180.0</p>
+    <p>"Slices of fresh pizza."</p>
+    <p>One quantity contains 6 Slices.</p>
+    <button onclick="addToCart('Green wave Mexican Pizza', 180.0)">Add to Cart</button>
+    <div class="quantity">
+        <button type="button" class="minus">-</button>
+        <input type="number" class="qty" min="1" step="1" value="1">
+        <button type="button" class="plus">+</button>
+    </div>
+</div>
+
+<br><br><br><br>
+
+<div class="product-card">
+    <h2>3. BURGER</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRynrBKEnQ63LBbkrPm1ICdFOGbv4RFwgt1MA&usqp=CAU" alt="Burger" align="right" height="200" width="250">
+    <br><p>Rs.70.00</p>
+    <p>"Delicious burger with fresh veggies!"</p>
+    <p>One quantity contains 1 Burger</p>
+    <button onclick="addToCart('Burger', 70.00)">Add to Cart</button>
+    <div class="quantity">
+        <button type="button" class="minus">-</button>
+        <input type="number" class="qty" min="1" step="1" value="1">
+        <button type="button" class="plus">+</button>
+    </div>
+</div>
+
+<br><br><br><br>
+
+<div class="product-card">
+  <h2>4. CAKE</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmpgueYatD-_Y790OJTl-hN23qA-ulzNqgQ&usqp=CAU"alt="Cake" align="right" height="200" width="250">
+    <br><p>Rs.500.00</p>
+    <p>"Cake for every occasion!!!!"</p>
+    <p>One quantity contains 10 pieces</p>
+    <button onclick="addToCart('Cake', 500.00)">Add to Cart</button>
+    <div class="quantity">
+      <button type="button" class="minus">-</button>
+      <input type="number" class="qty" min="1" step="1" value="1">
+      <button type="button" class="plus">+</button>
+    </div>
+</div>
+
+<br><br><br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Product Banner</title>
+<style>
+  /* Style for the banner */
+  .banner1 {
+    background-color: rgb(23, 39, 56);
+    color: #ffffff; /* text color */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Style for the text within the banner */
+  .banner-text {
+    animation: blink-animation 0.5s infinite alternate;
+  }
+
+  /* Blink animation */
+  @keyframes blink-animation {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="banner1">
+  <div class="text-content">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYfv5_pEk1xaZEUK3uShloM01cQDrtRlRxQ&s" width="200" height="120" class="img-fluid" alt="New Product">
+        </div>
+        <div class="col-md-6">
+          <h1 class="banner-text">Our Newest Product Offer</h1>
+          <h2 class="banner-text">Gujiya</h2>
+          <p class="banner-text">TASTY AND DELICIOUS GUJIYA !!!!..... GHARWALI GUJIYA!!!!!.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<div class="product-card">
+  <h2>6.Mithaii</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXMVGQtdfQU6-6FsWYrSI7SxA1XQPuvBKvg&usqp=CAU" alt="Mithaii" align="right" height="200" width="250">
+  <br><p>Rs.200.00</p>
+  <p>"Kuch Meetha ho jayee"</p>
+  <p>"one box contains 8 pieces of mithai.</p>
+  <button onclick="addToCart('Mithaii', 200.00)">Add to Cart</button>
+ 
+  <div class="quantity">
+    <button type="button" class="minus">-</button>
+    <input type="number" class="qty" min="1" step="1" value="1">
+    <button type="button" class="plus">+</button>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<div class="product-card">
+    <h2>6. GUJIYA</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYfv5_pEk1xaZEUK3uShloM01cQDrtRlRxQ&s"alt="Gujiya" align="right" height="200" width="250">
+    <br><p>Rs.55.00</p>
+    <p>"Holi special Gujiya...bilkul meethi aur swadisht apki battoon ki tarah"</p>
+    <p>One quantity contains 6 gujiyas</p>
+    <button onclick="addToCart('Gujiya', 55.00)">Add to Cart</button>
+
+    <div class="quantity">
+      <button type="button" class="minus">-</button>
+      <input type="number" class="qty" min="1" step="1" value="1">
+      <button type="button" class="plus">+</button>
+    </div>
+</div>
+
+<br><br><br><br>
+
+<div class="product-card">
+    <h2>7. PAPER BAG</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0HPvCIFp4uuNNEflzCXxJ3R7BNfSM368Ig&s" alt="Paper Bags"align="right", height="200" width="250">
+    <br><p>Rs19.99</p>
+    <p>""Going Green with Paper Bags...Eco-friendly.."</p>
+    <p>One quantity contains 2 pieces</p>
+    <button onclick="addToCart('Paper Bags', 14.99)">Add to Cart</button>
+      
+    <div class="quantity">
+      <button type="button" class="minus">-</button>
+      <input type="number" class="qty" min="1" step="1" value="1">
+      <button type="button" class="plus">+</button>
+    </div>
+</div>
+
+<br><br><br><br><br>
+
+<h1>CART</h1>
+<ul id="cart"></ul>
+
+<p>Total: Rs <span id="total-price">0.00</span></p>
+
+<script>
+    function updateTotalPrice(amount) {
+        var totalPriceElement = document.getElementById("total-price");
+        var currentTotal = parseFloat(totalPriceElement.textContent);
+        var newTotal = currentTotal + amount;
+        totalPriceElement.textContent = newTotal.toFixed(2);
+    }
+
+    function addToCart(productName, price) {
+        var quantity = parseInt(document.querySelector('.qty').value); // Get the quantity
+        var totalPrice = price * quantity; // Calculate total price for the quantity
+        
+        var cartItem = document.createElement("li");
+        cartItem.textContent = productName + " x" + quantity + " - Rs" + totalPrice.toFixed(2); // Display quantity and total price
+   
+        var removeButton = document.createElement("button");
+        removeButton.textContent = "Remove";
+        removeButton.onclick = function() {
+            cartItem.remove();
+            updateTotalPrice(-totalPrice); // Subtract total price when removing item
+        };
+        
+        cartItem.appendChild(removeButton);
+        document.getElementById("cart").appendChild(cartItem);
+        
+        updateTotalPrice(totalPrice); // Update total price with quantity
+    }
+
+    // Quantity increment and decrement
+    document.querySelectorAll('.plus').forEach(button => {
+        button.addEventListener('click', () => {
+            var qtyInput = button.parentElement.querySelector('.qty');
+            qtyInput.value = parseInt(qtyInput.value) + 1;
+        });
+    });
+
+    document.querySelectorAll('.minus').forEach(button => {
+        button.addEventListener('click', () => {
+            var qtyInput = button.parentElement.querySelector('.qty');
+            if (qtyInput.value > 1) {
+                qtyInput.value = parseInt(qtyInput.value) - 1;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+<style>
+  .container {
+      
+  }
+
+  .account-container {
+      border: 2px solid #332525; /* Adding border */
+      padding: 20px; /* Adding padding for spacing */
+      border-radius: 8px; /* Adding border radius for rounded corners */
+      max-width: 400px; /* Limiting maximum width for better presentation */
+      margin: 0 auto; /* Centering the container horizontally */
+  }
+</style>
+
+<div class="container">
+  <h2>Welcome to Your Account</h2>
+  <div class="account-container">
+      <p>Your account information:</p>
+      <p><strong>Username:</strong> <span id="username"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone Number:</strong> <span id="phoneNumber"></span></p>
+
+      <!-- You can display more user information here -->
+
+      <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</div>
+
+
+
+<!-- Registration Form -->
+<style>
+  .container 
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .form-container 
+  {
+      border: 2px solid #302828; /* Adding border */
+      padding: 20px; /* Adding padding for spacing */
+      border-radius: 8px; /* Adding border radius for rounded corners */
+      max-width: 400px; /* Limiting maximum width for better presentation */
+  }
+
+  .form-container form 
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .form-container form label,
+  .form-container form input,
+  .form-container form button {
+      margin-bottom: 10px;
+  }
+</style>
+
+<div class="container">
+  <h2>Create Account</h2>
+  <div class="form-container">
+      <form id="registrationForm" onsubmit="register(event)">
+          <label for="newUsername">Username:</label>
+          <input type="text" id="newUsername" name="newUsername" required>
+          <label for="newEmail">Email:</label>
+          <input type="email" id="newEmail" name="newEmail" required>
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+          <button type="submit">Create Account</button>
+      </form>
+  </div>
+</div>
+
+
+<script>
+  // Simulated user data
+  var userData = 
+  {
+      username: "riya",
+      email: "riyapathak635@gmail.com",
+      phoneNumber: "9758683342"
+      // Add more user data as needed
+  };
+
+  // Function to populate user information
+  function populateUserInfo() 
+  {
+      document.getElementById("username").textContent = userData.username;
+      document.getElementById("email").textContent = userData.email;
+      document.getElementById("phoneNumber").textContent = userData.phoneNumber;
+      // Populate more user data as needed
+  }
+
+  // Function to logout (clear session, redirect to login page, etc.)
+  function logout() {
+      // Implement your logout logic here, such as clearing session data or redirecting to the login page
+      alert("Logged out successfully!");
+      // Redirect to the login page (replace 'login.html' with your actual login page)
+      window.location.href = "login.html";
+  }
+
+  // Function to register a new user
+  function register(event) {
+      event.preventDefault(); // Prevent form submission
+      var newUsername = document.getElementById("newUsername").value;
+      var newEmail = document.getElementById("newEmail").value;
+      var phoneNumber = document.getElementById("phoneNumber").value;
+
+      // Save the new user data to the database or perform other registration actions
+      // For demonstration, let's just update the userData object
+      userData.username = newUsername;
+      userData.email = newEmail;
+      userData.phoneNumber = phoneNumber;
+
+      // Update the user information displayed on the page
+      populateUserInfo();
+
+      alert("Account created successfully!");
+      // Optionally, you can clear the registration form fields
+      document.getElementById("registrationForm").reset();
+  }
+
+  // Populate user information when the page loads
+  window.onload = function() {
+      populateUserInfo();
+  };
+</script>
+
+<script src="script.js"></script> <!-- Link to your JavaScript file -->
+
+</body>
+</html>
+
+
+</body>
+</html>
